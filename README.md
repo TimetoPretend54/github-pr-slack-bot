@@ -43,6 +43,11 @@ pip install slack_sdk
   - https://docs.dominodatalab.com/en/4.6/user_guide/9c4f82/use-requirements-txt--python-only-/
   - https://www.jetbrains.com/help/idea/managing-dependencies.html#configure-requirements
 
+#### Issue w/ CRON Accuracy
+NOT stable, refer to links below for more info
+- https://github.com/orgs/community/discussions/52477#discussioncomment-5580518
+- https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+
 ### 2. PythonAnywhere
 
 Navigate to https://www.pythonanywhere.com/login/ to view.
