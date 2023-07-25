@@ -44,7 +44,7 @@ pip install slack_sdk
   - https://www.jetbrains.com/help/idea/managing-dependencies.html#configure-requirements
 
 #### Issue w/ CRON Accuracy
-NOT stable, refer to links below for more info
+NOT stable, refer to links below for more info, might not run cron or if it does 5-15 minutes later than scheduled
 - https://github.com/orgs/community/discussions/52477#discussioncomment-5580518
 - https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
 
