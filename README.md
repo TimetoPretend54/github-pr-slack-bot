@@ -38,6 +38,7 @@ pip install slack_sdk
 
 - https://www.python-engineer.com/posts/run-python-github-actions/
 - https://github.com/patrickloeber/python-github-action-template
+  - https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#workflows
 - requirements.txt (python module mgmt): 
   - https://docs.dominodatalab.com/en/4.6/user_guide/9c4f82/use-requirements-txt--python-only-/
   - https://www.jetbrains.com/help/idea/managing-dependencies.html#configure-requirements
