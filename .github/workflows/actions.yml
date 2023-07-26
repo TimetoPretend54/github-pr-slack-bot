@@ -25,5 +25,8 @@ jobs:
           
       - name: execute py script # run main.py
         env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_BOT_TOKEN:    ${{ secrets.SLACK_BOT_TOKEN }}
+          API_TOKEN_GITHUB:   ${{ secrets.API_TOKEN_GITHUB }}
+          OWNER_NAME_GITHUB:  ${{ secrets.OWNER_NAME_GITHUB }}
+
         run: python github_pr_slack_bot.py
