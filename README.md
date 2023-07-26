@@ -4,7 +4,7 @@
 
 Repository for creating GitHub PR Slack Bot for running scheduled job to compile list of outstanding PR requests.
 
-Utilizes GitHub Actions to run the Cron Job Once a day at 4:30pm UTC.
+Utilizes GitHub Actions to run the Cron Job Once a day at 4:05pm UTC.
 
 ## Slack Configuration
 1. Create/Determine Slack Workspace to use
