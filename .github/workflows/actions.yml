@@ -3,7 +3,7 @@ name: run github_pr_slack_bot.py
 
 on:
   schedule:
-    - cron: '20 0 * * *' # At 12:20 AM each day UTC
+    - cron: '*/5 * * * *' # At 12:20 AM each day UTC
 
 jobs:
   build:
