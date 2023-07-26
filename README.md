@@ -1,5 +1,7 @@
 # GitHub PR Slack Bot
 
+![title](./assets/bot_image.png)
+
 Repository for creating GitHub PR Slack Bot for running scheduled job to compile list of outstanding PR requests.
 
 Utilizes GitHub Actions to run the Cron Job Once a day at 4:30pm UTC.
@@ -30,6 +32,7 @@ Required Python Dependencies
 - ex: for GitHub Actions, add to job steps (see [actions.yml](actions.yml), [requirements.txt](requirements.txt))
 ```
 pip install slack_sdk
+pip install requests
 ```
 
 ### 1. GitHub Actions
@@ -68,4 +71,20 @@ Navigate to https://www.pythonanywhere.com/login/ to view.
 - https://python.plainenglish.io/lets-create-a-slackbot-cause-why-not-2972474bf5c1
 - https://slack.dev/python-slack-sdk/
 - https://stateful.com/blog/github-pulls-api-manage-prs
+    - https://www.section.io/engineering-education/working-with-github-web-api-in-python/
+    - https://melaniesoek0120.medium.com/how-to-use-github-api-to-extract-data-with-python-bdc61106a501
+    - [Accessing Another Repository in GitHub Actions](https://stackoverflow.com/a/71070149)
+    - For Private Repos: Create a machine user account on GitHub 
+      - Requires organization -> add machine user as external collaborator -> set read-only access (for classic Personal Access Tokens, Fine-Grain allows more control)
+      - https://cloud.redhat.com/blog/private-git-repositories-part-3-personal-access-tokens
+      - https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#machine-users
+      - https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
 
+### GitHub API - Personal Access Tokens
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#fine-grained-personal-access-tokens
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#keeping-your-personal-access-tokens-secure
+- [List Repos of a User/Org](https://stackoverflow.com/a/33159888)
+  - https://docs.github.com/en/free-pro-team@latest/rest/repos/repos?apiVersion=2022-11-28#list-organization-repositories
+
+### GitHub Recommends creating a GitHub App to Authenticate w/ GitHub API for an Organization
+- https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api?apiVersion=2022-11-28#about-tokens
