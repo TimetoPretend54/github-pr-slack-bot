@@ -35,8 +35,8 @@ channel_repo_dict = {
 GITHUB_API_BASE_URL="https://api.github.com"
 
 slack_token = os.environ.get('SLACK_BOT_TOKEN')
-github_token = os.environ.get('GITHUB_API_TOKEN')
-owner = os.environ.get('GITHUB_OWNER_NAME')
+github_token = os.environ.get('API_TOKEN_GITHUB')
+owner = os.environ.get('OWNER_NAME_GITHUB')
 
 
 # 
